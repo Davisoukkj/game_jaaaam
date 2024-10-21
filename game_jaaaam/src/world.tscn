@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://ujt57547ec83"]
+[gd_scene load_steps=18 format=3 uid="uid://ujt57547ec83"]
 
 [ext_resource type="Texture2D" uid="uid://cvxwqv4qdopsg" path="res://textures/Poliigon_ConcreteFloorPoured_7656/2K/Poliigon_ConcreteFloorPoured_7656_BaseColor.jpg" id="1_7c2qi"]
 [ext_resource type="PackedScene" uid="uid://dnhgpjgbyah0s" path="res://src/player.tscn" id="2_ol5fw"]
 [ext_resource type="Texture2D" uid="uid://c4cytuby15w40" path="res://textures/Poliigon_BrickWallReclaimed_8320/2K/Poliigon_BrickWallReclaimed_8320_BaseColor.jpg" id="3_0mjl0"]
 [ext_resource type="Script" path="res://scripts/Enemy.gd" id="4_3p5pi"]
 [ext_resource type="PackedScene" uid="uid://bfsmbulffn54d" path="res://textures/enemy/gman_toilet_animations.glb" id="5_136ja"]
+[ext_resource type="PackedScene" uid="uid://dpjrtxi8i3645" path="res://textures/desentupidor/plunger.glb" id="6_eac3q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_geevn"]
 albedo_texture = ExtResource("3_0mjl0")
@@ -395,3 +396,11 @@ shape = SubResource("BoxShape3D_fm8fb")
 
 [node name="gman_toilet_animations" parent="NavigationRegion3D/Enemy" instance=ExtResource("5_136ja")]
 transform = Transform3D(-0.21, 0, -1.83588e-08, 0, 0.21, 0, 1.83588e-08, 0, -0.21, 0.0665359, -0.814681, 0.0978394)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="NavigationRegion3D/Enemy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.255874, -0.527449)
+light_color = Color(0.992157, 0, 0.156863, 1)
+light_energy = 0.543
+
+[node name="plunger" parent="." instance=ExtResource("6_eac3q")]
+transform = Transform3D(0.281041, 0.602695, 0, -0.602695, 0.281041, 0, 0, 0, 0.665, 9.52945, 2.24196, 25.7851)
