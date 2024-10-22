@@ -48,6 +48,7 @@ grow_vertical = 2
 texture = ExtResource("3_hj5hb")
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 13.0
 offset_right = 123.0

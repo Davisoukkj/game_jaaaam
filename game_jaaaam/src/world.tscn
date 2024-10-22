@@ -53,7 +53,7 @@ material = SubResource("StandardMaterial3D_58ba4")
 size = Vector2(80, 90)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fm8fb"]
-size = Vector3(2.1071, 1.78, 1.0153)
+size = Vector3(0.97829, 1.78, 1.0153)
 
 [node name="World" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45091, 0.36504, -0.272049)
